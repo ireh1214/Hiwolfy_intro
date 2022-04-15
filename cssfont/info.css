@@ -1,0 +1,91 @@
+* {
+}
+
+@font-face {
+  font-family: "NEXON";
+  src: url("NEXONM.woff") format("woff");
+  src: url("NEXONB.woff") format("woff");
+  src: url("NEXONL.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SEBANG";
+  src: url("SEBANG.otf") format("otf");
+  src: url("SEBANGBold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #eee;
+}
+
+#infoWrapPC {
+  font-family: "NEXON" !important;
+  color: #333;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  padding: 48px 0;
+  font-size: 15px;
+}
+
+#infoWrapPC span {
+  font-weight: 900;
+  font-size: 16.5px;
+  line-height: 2;
+}
+
+i {
+  font-weight: 900;
+}
+
+.roww {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #333;
+}
+.infoWrapMo {
+  display: none;
+}
+
+@media all and (min-width: 320px) and (max-width: 500px) {
+  pre {
+    display: none;
+  }
+  .infoWrapMo {
+    display: block;
+    font-size: 13px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+
+  .infoWrapMo span {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px;
+    line-height: 1;
+  }
+
+  .infoWrapMo p {
+    color: #999;
+  }
+
+  hr {
+    color: #333;
+    background-color: #333;
+  }
+
+  .infoWrapMo .roww button {
+    padding: 8px 16px;
+  }
+}
