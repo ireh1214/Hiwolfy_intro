@@ -1,6 +1,3 @@
-* {
-}
-
 @font-face {
   font-family: "NEXON";
   src: url("NEXONM.woff") format("woff");
@@ -10,25 +7,22 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "SEBANG";
-  src: url("SEBANG.otf") format("otf");
-  src: url("SEBANGBold.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  background-color: #eee;
+  background-color: #fefefe;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
 }
 
 #infoWrapPC {
+  width: 480px;
+  background-color: #fff;
   font-family: "NEXON" !important;
   color: #333;
   text-align: center;
-  width: 600px;
+
   margin: 0 auto;
-  padding: 48px 0;
+  padding: 48px 2px;
   font-size: 15px;
 }
 
@@ -52,40 +46,34 @@ i {
 a {
   color: #333;
 }
-.infoWrapMo {
-  display: none;
+
+button {
+  padding: 8px 16px;
+  border: 2px solid #333;
+  transition: 0.4s all;
+}
+
+button:hover {
+  background-color: #333;
+  border-radius: 50px;
+}
+
+button a:hover {
+  color: #fff;
 }
 
 @media all and (min-width: 320px) and (max-width: 500px) {
-  pre {
-    display: none;
-  }
-  .infoWrapMo {
+  #infoWrapPC {
     display: block;
     font-size: 13px;
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    padding: 48px 0;
-  }
-
-  .infoWrapMo span {
-    font-weight: 500;
-    font-size: 15px;
-    padding: 8px;
-    line-height: 1;
-  }
-
-  .infoWrapMo p {
-    color: #999;
+    padding: 48px 10px;
   }
 
   hr {
     color: #333;
     background-color: #333;
-  }
-
-  .infoWrapMo .roww button {
-    padding: 8px 16px;
   }
 }

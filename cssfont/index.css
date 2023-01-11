@@ -1,8 +1,4 @@
-* {
-  font-family: "SEBANG";
-}
-
-@font-face {
+/* @font-face {
   font-family: "NEXON";
   src: url("NEXONM.woff") format("woff");
   src: url("NEXONB.woff") format("woff");
@@ -17,17 +13,25 @@
   src: url("SEBANGBold.otf") format("otf");
   font-weight: normal;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "Mabi";
+  src: url("Mabi.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  background-color: #eee;
+  font-family: "Mabi" !important;
+  background-color: #fefefe;
 }
 
 /* 이거 ID랑 className같은 경우에는
 요즘 한글도 지원이 된다고 들어서 한글로 해봤음 */
 
 #감싸기 {
-  max-width: 560px;
+  max-width: 630px;
   min-width: 300px;
   height: 80vh;
   overflow: hidden;
@@ -112,7 +116,7 @@ a:hover {
 }
 
 .logoWrap {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -135,7 +139,7 @@ a:hover {
 }
 
 .logoFrame {
-  width: 240px;
+  width: 300px;
   margin: 16px auto;
   display: flex;
   flex-direction: column;
@@ -158,6 +162,11 @@ a:hover {
   width: 100px;
   height: auto;
   margin: 0 auto;
+}
+
+.copy {
+  color: #ccc;
+  margin-top: 10%;
 }
 
 @media all and (min-width: 320px) and (max-width: 600px) {
