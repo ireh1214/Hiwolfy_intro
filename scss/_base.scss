@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "NEXON";
+  src: url("../font/NEXONB.woff") format("woff");
+  src: url("../font/NEXONL.woff") format("woff");
+  src: url("../font/NEXONM.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SEBANG";
+  src: url("../font/SEBANG.otf") format("otf");
+  src: url("../font/SEBANGBold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mabi";
+  src: url("../font/Mabinogi_Classic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  background-size: cover;
+  background-position: center;
+  font-family: "Mabi";
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: $main_bg;
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

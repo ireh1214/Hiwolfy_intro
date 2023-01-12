@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "NEXON";
+  src: url("../font/NEXONB.woff") format("woff");
+  src: url("../font/NEXONL.woff") format("woff");
+  src: url("../font/NEXONM.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SEBANG";
+  src: url("../font/SEBANG.otf") format("otf");
+  src: url("../font/SEBANGBold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mabi";
+  src: url("../font/Mabinogi_Classic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  background-size: cover;
+  background-position: center;
+  font-family: "Mabi";
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #fefefe;
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.common_button {
+  background-color: white;
+  border: 2px solid #000;
+  padding: 8px 16px;
+  color: blue;
+  font-size: 17px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.common_button:hover {
+  background-color: #000;
+  color: aliceblue;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#index_wrap {
+  max-width: 700px;
+  min-width: 300px;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 40px auto 0;
+  padding: 16px;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+}
+#index_wrap .navigation {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#index_wrap .navigation a li {
+  width: 160px;
+  height: 160px;
+  margin: 8px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#index_wrap .navigation a li:hover {
+  -webkit-animation: rotate 0.5s linear infinite;
+          animation: rotate 0.5s linear infinite;
+}
+#index_wrap .title {
+  font-size: 36px;
+  font-family: "Do Hyeon", sans-serif;
+}
+#index_wrap .main_image {
+  width: 320px;
+  height: 200px;
+  background-image: url("../image/hiwolfy4.png");
+  margin: 0 auto;
+}
+#index_wrap .social_wrap {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#index_wrap .social_wrap a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#index_wrap .social_wrap a:hover {
+  text-decoration: underline;
+}
+#index_wrap .social_wrap a p {
+  margin-right: 8px;
+  position: relative;
+  top: -3px;
+}
+#index_wrap .social_wrap .icon_github {
+  width: 14px;
+  height: 14px;
+  background-image: url("../image/github.png");
+}
+#index_wrap .social_wrap .icon_twitter {
+  width: 14px;
+  height: 14px;
+  background-image: url("../image/twitter.png");
+}
+#index_wrap .social_wrap .icon_soundcloud {
+  width: 14px;
+  height: 14px;
+  background-image: url("../image/soundcloud.png");
+}
+#index_wrap .copy {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.logo_wrap {
+  width: 924px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: #333;
+  text-align: center;
+}
+.logo_wrap span {
+  font-size: 17px;
+  font-weight: bold;
+}
+.logo_wrap p {
+  font-size: 13px;
+  color: #999;
+}
+.logo_wrap .logo_container {
+  width: 260px;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+}
+.logo_wrap .logo_container .logo_img {
+  width: 260px;
+  height: 260px;
+  border: 8px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.logo_wrap .logo_container .logo_img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.logo_wrap .logo_container .logo_1 {
+  background-image: url("../image/logo1.png");
+}
+.logo_wrap .logo_container .logo_2 {
+  background-image: url("../image/logo2.jpeg");
+}
+.logo_wrap .logo_container .logo_3 {
+  background-image: url("../image/logo3.jpeg");
+}
+.logo_wrap .logo_container .logo_4 {
+  background-image: url("../image/logo4.jpeg");
+}
+.logo_wrap .logo_container .logo_5 {
+  background-image: url("../image/logo5.png");
+}
+.logo_wrap .logo_container .logo_6 {
+  background-image: url("../image/logo6.png");
+}
+.logo_wrap .logo_container .logo_7 {
+  background-image: url("../image/logo7.jpeg");
+}
+.logo_wrap .logo_container .logo_8 {
+  background-image: url("../image/logo8.jpeg");
+}
+.logo_wrap .logo_container .logo_9 {
+  background-image: url("../image/logo9.png");
+}
+.logo_wrap .logo_container .logo_10 {
+  background-image: url("../image/logo10.png");
+}
+.logo_wrap .logo_container .logo_11 {
+  background-image: url("../image/logo11.png");
+}
+
+.operation_foot {
+  width: 100px;
+  margin: 80px auto 24px;
+}
+
+#info_wrap {
+  width: 100%;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+#info_wrap .info_img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("/image/hiwolfy2.png");
+  position: relative;
+  right: 20px;
+}
+#info_wrap .info_container {
+  max-width: 600px;
+  min-width: 300px;
+  margin: 24px auto;
+  background-color: #fefefe;
+}
+#info_wrap .info_container p {
+  margin-top: 36px;
+  font-size: 16.5px;
+  line-height: 1.6 !important;
+  letter-spacing: 0.2px;
+  word-spacing: 1.5px;
+}
+
+.info_foot {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 24px;
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+  .info_container p {
+    font-size: 15px;
+  }
+}
