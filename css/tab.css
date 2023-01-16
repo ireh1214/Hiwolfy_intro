@@ -1,0 +1,64 @@
+#character_wrap {
+  width: 900px;
+  margin: 0 auto;
+  min-width: 300px;
+}
+
+/* .clearfix {
+  padding: 0;
+  margin: 0;
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  display: flex;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+} */
+
+/* Menu das abas */
+.tabs-menu {
+  background: #0074a2;
+}
+.tabs-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.tabs-menu ul li a {
+  display: block;
+  padding: 10px 28px;
+  text-decoration: none;
+  color: #fff;
+}
+.tabs-menu ul li a.active-tab-menu {
+  background: #eee;
+  color: #000;
+}
+
+/* Conteúdo das abas */
+.tabs {
+  display: none;
+  padding: 30px;
+}
+.first-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.first-tab div {
+  margin: 16px;
+  text-align: center;
+}
+
+.ch1,
+.ch2,
+.ch3 {
+  width: 200px;
+  height: 200px;
+  background-color: #0074a2;
+}
