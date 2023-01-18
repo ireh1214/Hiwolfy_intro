@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "NEXON";
   src: url("../font/NEXONB.woff") format("woff");
@@ -27,17 +28,137 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background-color: #fefefe;
 }
 
-@media all and (min-width: 320px) and (max-width: 600px) {
-  body {
-    width: 90%;
-    margin: 0 auto;
-  }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .common_button {
   background-color: white;
   border: 2px solid #000;
@@ -52,23 +173,6 @@ body {
   color: aliceblue;
 }
 
-@-webkit-keyframes rotate {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
 #index_wrap {
   max-width: 700px;
   min-width: 300px;
@@ -89,6 +193,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 24px auto;
 }
 #index_wrap .navigation a li {
   width: 160px;
@@ -156,81 +261,120 @@ body {
   color: #aaa;
 }
 
-.logo_wrap {
-  max-width: 1024px;
-  width: 924px;
+#op_wrap h2 {
+  width: 300px;
+  text-align: center;
+  margin: 100px auto 36px;
+  padding-bottom: 16px;
+  font-size: 30px;
+  position: relative;
+}
+#op_wrap h2::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#op_wrap hr {
+  display: none;
+  width: 40%;
+  opacity: 0.3;
+}
+#op_wrap .logo_wrap {
+  max-width: 900px;
+  min-width: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 16px;
   color: #333;
   text-align: center;
 }
-.logo_wrap span {
+#op_wrap .logo_wrap span {
   font-size: 17px;
   font-weight: bold;
 }
-.logo_wrap p {
+#op_wrap .logo_wrap p {
   font-size: 13px;
   color: #999;
 }
-.logo_wrap .logo_container {
-  width: 260px;
+#op_wrap .logo_wrap .logo_container {
+  width: 248px;
   margin: 16px auto;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
-.logo_wrap .logo_container .logo_img {
-  width: 260px;
-  height: 260px;
+#op_wrap .logo_wrap .logo_container span {
+  margin: 16px auto 4px;
+}
+#op_wrap .logo_wrap .logo_container .logo_img {
+  width: 248px;
+  height: 248px;
   border: 8px solid #fff;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.logo_wrap .logo_container .logo_img:hover {
+#op_wrap .logo_wrap .logo_container .logo_img:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.logo_wrap .logo_container .logo_1 {
+#op_wrap .logo_wrap .logo_container .logo_1 {
   background-image: url("../image/logo1.png");
 }
-.logo_wrap .logo_container .logo_2 {
+#op_wrap .logo_wrap .logo_container .logo_2 {
   background-image: url("../image/logo2.jpeg");
 }
-.logo_wrap .logo_container .logo_3 {
+#op_wrap .logo_wrap .logo_container .logo_3 {
   background-image: url("../image/logo3.jpeg");
 }
-.logo_wrap .logo_container .logo_4 {
+#op_wrap .logo_wrap .logo_container .logo_4 {
   background-image: url("../image/logo4.jpeg");
 }
-.logo_wrap .logo_container .logo_5 {
+#op_wrap .logo_wrap .logo_container .logo_5 {
   background-image: url("../image/logo5.png");
 }
-.logo_wrap .logo_container .logo_6 {
+#op_wrap .logo_wrap .logo_container .logo_6 {
   background-image: url("../image/logo6.png");
 }
-.logo_wrap .logo_container .logo_7 {
+#op_wrap .logo_wrap .logo_container .logo_7 {
   background-image: url("../image/logo7.jpeg");
 }
-.logo_wrap .logo_container .logo_8 {
+#op_wrap .logo_wrap .logo_container .logo_8 {
   background-image: url("../image/logo8.jpeg");
 }
-.logo_wrap .logo_container .logo_9 {
+#op_wrap .logo_wrap .logo_container .logo_9 {
   background-image: url("../image/logo9.png");
 }
-.logo_wrap .logo_container .logo_10 {
+#op_wrap .logo_wrap .logo_container .logo_10 {
   background-image: url("../image/logo10.png");
 }
-.logo_wrap .logo_container .logo_11 {
+#op_wrap .logo_wrap .logo_container .logo_11 {
   background-image: url("../image/logo11.png");
 }
-
-.operation_foot {
-  width: 100px;
-  margin: 80px auto 24px;
+#op_wrap .operation_foot {
+  width: 300px;
+  margin: 80px auto 48px;
+  position: relative;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+#op_wrap .operation_foot::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #info_wrap {
@@ -239,17 +383,24 @@ body {
   word-break: keep-all;
 }
 #info_wrap .info_img {
-  min-width: 300px;
-  max-width: 400px;
-  height: 300px;
-  margin: 0 auto 40px;
+  min-width: 250px;
+  width: 300px;
+  height: 240px;
+  margin: 36px auto 0px;
   background-image: url("/image/hiwolfy3.png");
 }
 #info_wrap .info_container {
   max-width: 600px;
   min-width: 300px;
-  margin: 24px auto;
+  margin: 24px auto 100px;
   background-color: #fefefe;
+}
+#info_wrap .info_container .info_date {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+  text-align: right;
 }
 #info_wrap .info_container p {
   margin-top: 36px;
@@ -258,15 +409,101 @@ body {
   letter-spacing: 0.2px;
   word-spacing: 1.5px;
 }
+#info_wrap .info_container p::before {
+  content: "🐾";
+  font-size: 30px;
+  padding-left: 8px;
+  opacity: 0.8;
+}
+#info_wrap .info_container p::after {
+  content: "_";
+}
 
 .info_foot {
   display: flex;
   justify-content: center;
-  margin: 40px auto 24px;
+  margin: 40px auto 40px;
 }
 
 @media (max-width: 600px) {
-  #info_wrap .info_container p {
+  #op_wrap h2 {
+    font-size: 20px;
+  }
+  #op_wrap #info_wrap .info_container p {
     font-size: 14px;
   }
+}
+/** page structure **/
+.trpg_wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  min-width: 700px;
+  height: 90vh;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow-y: scroll;
+  padding-bottom: 28px;
+}
+.trpg_wrap .trpg_rule {
+  width: 700px;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.trpg_wrap .trpg_rule span {
+  padding: 4px 12px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 12.5px;
+  color: #000;
+  opacity: 0.7;
+}
+.trpg_wrap .trpg_rule span:hover {
+  opacity: 1;
+}
+.trpg_wrap table {
+  max-width: 1000px;
+  min-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.trpg_wrap tr th,
+.trpg_wrap tr td {
+  padding: 10px 8px;
+  text-align: center;
+}
+.trpg_wrap tr td:nth-child(1) {
+  text-align: left;
+}
+.trpg_wrap tr td:nth-child(3) {
+  width: 100px;
+}
+.trpg_wrap tr td:nth-child(4) {
+  width: 100px;
+}
+.trpg_wrap tr:nth-child(1) {
+  cursor: pointer;
+  background: #eee;
+}
+.trpg_wrap h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 80px auto 24px;
+}
+.trpg_wrap h6 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 14px;
+  color: #999;
+  line-height: 1.5;
+}
+.trpg_wrap h6 span {
+  color: #333;
+  font-weight: 700;
 }

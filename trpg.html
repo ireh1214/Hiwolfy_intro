@@ -4,10 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta property="og:title" content="날득시 인포" />
+    <meta property="og:description" content=":3" />
+    <meta name="google" content="notranslate" />
+
+    <title>날득시 TRPG 목록</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="/jquery-2.2.2.min.js"></script>
+    <script src="/db.js"></script>
+    <script>
+      window.onload = function () {
+        var table = document.createElement("table");
+        var targetPn = document.getElementById("targetPn");
+        targetPn.appendChild(table);
+
+        for (var i = 0; i < data.length; i++) {
+          var tr = document.createElement("tr");
+          table.appendChild(tr);
+          for (var j = 0; j < data[i].length; j++) {
+            var td = document.createElement("td");
+            tr.appendChild(td);
+            td.innerHTML = data[i][j];
+          }
+        }
+      };
+    </script>
   </head>
   <body>
-    <h1>정리를... 해야됨 이제!!!</h1>
+    <div class="trpg_wrap">
+      <h1>날득시 시나리오 목록🌱</h1>
+      <h6>
+        세팅 여부는 제가 세계관을 숙지하고 있는지, <br />
+        외에 제 기준에서 단기간에 다녀올 수 있을 만큼 제대로 준비되어 있는지(마음의 준비 포함ㅎㅎ)<br />
+        ...그런것들을 기준하여 기재했습니다! <span> 코딩 연습 겸 해서 검색+정렬 기능을 추가할 예정입니다</span>.<br />
+        <br />
+        지금은 Ctrl+f로 찾아주라 !
+      </h6>
+      <p class="trpg_rule">
+        <span>CoC</span>
+        <span>inSANe</span>
+        <span>스트라토샤우트</span>
+        <span>피아스코</span>
+        <span>더블크로스(Dx3)</span>
+      </p>
+      <div id="targetPn"></div>
+    </div>
 
     <!-- <pre>
         다녀온 시날 목록 ▽ 
@@ -135,8 +183,15 @@ kill me, darling (킬미 달링)
 외에 더블크로스 & 인세인 & 피아스코 & 스트라토 샤우트를 할 줄 알지만 간 시날이 손에 꼽을 정도로 적습니다 (ㅋㅋㅋㅋ) 
 
 
+
 감사합니다!
  
     </pre> -->
+
+    <script>
+      $(function () {
+        $("#keywords").tablesorter();
+      });
+    </script>
   </body>
 </html>

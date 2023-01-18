@@ -3,6 +3,28 @@
   margin: 0 auto;
   min-width: 300px;
 }
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#character_wrap h1 {
+  font-size: 30px;
+}
+.character_img {
+  width: 160px;
+  height: 160px;
+  background-image: url("../image/hiwolfy2.png");
+  margin: 100px auto 24px;
+  border-radius: 100%;
+  border: 1px solid #333;
+  animation: rotate_image 0.5s linear infinite;
+}
+
+.character_img:hover {
+  animation: none;
+}
 
 /* .clearfix {
   padding: 0;
