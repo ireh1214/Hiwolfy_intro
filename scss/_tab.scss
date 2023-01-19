@@ -1,0 +1,129 @@
+#character_wrap {
+  max-width: 900px;
+  min-width: 600px;
+  margin: 0 auto;
+  word-break: keep-all;
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    margin: 24px;
+  }
+
+  header {
+    div {
+      font-size: 14px;
+      text-align: center;
+      width: 600px;
+      margin: 0 auto 24px;
+      line-height: 1.5;
+    }
+
+    .character_img {
+      width: 150px;
+      height: 150px;
+      background-image: url("../image/c0-1.png");
+      margin: 0px auto;
+      /* border-radius: 100%; */
+    }
+  }
+
+  /* Menu das abas */
+  .tabs-menu {
+    width: 100%;
+    background: #eee;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        width: 16%;
+        text-align: center;
+
+        a {
+          display: block;
+          padding: 10px 28px;
+          text-decoration: none;
+          color: #333;
+
+          &.active_tab_class {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #333;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  /* Conteúdo das abas */
+
+  .tabs {
+    display: none;
+    padding: 48px 0;
+
+    .tabs_inner {
+      margin: 16px;
+      text-align: center;
+
+      p {
+        width: 230px;
+        height: 300px;
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      h5 {
+        font-weight: normal;
+        font-size: 13px;
+        margin: 8px auto 4px;
+        color: #666;
+      }
+
+      .ch1 {
+        background-image: url("../image/c2.png");
+      }
+      .ch2 {
+        background-image: url("../image/c1.png");
+      }
+      .ch3 {
+        background-image: url("../image/c6.png");
+        background-position: 25% 10%;
+      }
+      .ch4 {
+        background-image: url("../image/c3.png");
+      }
+      .ch5 {
+        background-image: url("../image/c4.png");
+      }
+      .ch6 {
+        background-image: url("../image/c7.png");
+      }
+      .ch7 {
+        background-image: url("../image/c12.png");
+      }
+      .ch8 {
+        background-image: url("../image/c11.png");
+      }
+      .ch9 {
+        background-image: url("../image/c10.png");
+      }
+      .ch10 {
+        background-image: url("../image/c9.png");
+      }
+      .ch11 {
+        background-image: url("../image/c5.png");
+      }
+    }
+  }
+
+  .tabs.active_tab_class {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

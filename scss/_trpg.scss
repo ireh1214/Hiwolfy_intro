@@ -141,6 +141,7 @@
     font-size: 30px;
     text-align: center;
     margin: 80px auto 24px;
+    z-index: 100;
   }
   h6 {
     text-align: center;
@@ -190,6 +191,9 @@
 
     #targetPn {
       width: 100%;
+      table {
+        font-size: 14.5px;
+      }
     }
   }
 }

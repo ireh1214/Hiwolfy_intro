@@ -560,6 +560,7 @@ table {
   font-size: 30px;
   text-align: center;
   margin: 80px auto 24px;
+  z-index: 100;
 }
 .trpg_wrap h6 {
   text-align: center;
@@ -604,4 +605,120 @@ table {
   .trpg_wrap #targetPn {
     width: 100%;
   }
+  .trpg_wrap #targetPn table {
+    font-size: 14.5px;
+  }
+}
+#character_wrap {
+  max-width: 900px;
+  min-width: 600px;
+  margin: 0 auto;
+  word-break: keep-all;
+  /* Menu das abas */
+  /* Conteúdo das abas */
+}
+#character_wrap h1 {
+  font-size: 26px;
+  text-align: center;
+  margin: 24px;
+}
+#character_wrap header div {
+  font-size: 14px;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.5;
+}
+#character_wrap header .character_img {
+  width: 150px;
+  height: 150px;
+  background-image: url("../image/c0-1.png");
+  margin: 0px auto;
+  /* border-radius: 100%; */
+}
+#character_wrap .tabs-menu {
+  width: 100%;
+  background: #eee;
+}
+#character_wrap .tabs-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+#character_wrap .tabs-menu ul li {
+  width: 16%;
+  text-align: center;
+}
+#character_wrap .tabs-menu ul li a {
+  display: block;
+  padding: 10px 28px;
+  text-decoration: none;
+  color: #333;
+}
+#character_wrap .tabs-menu ul li a.active_tab_class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #fff;
+}
+#character_wrap .tabs {
+  display: none;
+  padding: 48px 0;
+}
+#character_wrap .tabs .tabs_inner {
+  margin: 16px;
+  text-align: center;
+}
+#character_wrap .tabs .tabs_inner p {
+  width: 230px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#character_wrap .tabs .tabs_inner h5 {
+  font-weight: normal;
+  font-size: 13px;
+  margin: 8px auto 4px;
+  color: #666;
+}
+#character_wrap .tabs .tabs_inner .ch1 {
+  background-image: url("../image/c2.png");
+}
+#character_wrap .tabs .tabs_inner .ch2 {
+  background-image: url("../image/c1.png");
+}
+#character_wrap .tabs .tabs_inner .ch3 {
+  background-image: url("../image/c6.png");
+  background-position: 25% 10%;
+}
+#character_wrap .tabs .tabs_inner .ch4 {
+  background-image: url("../image/c3.png");
+}
+#character_wrap .tabs .tabs_inner .ch5 {
+  background-image: url("../image/c4.png");
+}
+#character_wrap .tabs .tabs_inner .ch6 {
+  background-image: url("../image/c7.png");
+}
+#character_wrap .tabs .tabs_inner .ch7 {
+  background-image: url("../image/c12.png");
+}
+#character_wrap .tabs .tabs_inner .ch8 {
+  background-image: url("../image/c11.png");
+}
+#character_wrap .tabs .tabs_inner .ch9 {
+  background-image: url("../image/c10.png");
+}
+#character_wrap .tabs .tabs_inner .ch10 {
+  background-image: url("../image/c9.png");
+}
+#character_wrap .tabs .tabs_inner .ch11 {
+  background-image: url("../image/c5.png");
+}
+#character_wrap .tabs.active_tab_class {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }

@@ -14,140 +14,207 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/css/tab.css" />
-    <script src="/jquery-2.2.2.min.js"></script>
   </head>
   <body>
     <div id="character_wrap">
-      <div class="character_img"></div>
-      <h1>탭메뉴 구현 연습으아악흐아아악기억이안나</h1>
+      <header>
+        <div class="character_img"></div>
+        <h1>탭메뉴 구현 테스트</h1>
+        <div>
+          <p>카페 커뮤니티를 포함한 2015년 이전의 커뮤니티는 기재하지 않습니다. 모든 커뮤는 트위터 커뮤니티!</p>
 
-      <div class="tabs-content">
-        <div class="tabs-menu clearfix">
-          <ul>
-            <!-- <li>
-              <a class="active-tab-menu" href="#" data-tab="tab1">2023</a>
-            </li> -->
-            <li>
-              <a class="active-tab-menu" href="#" data-tab="tab1">2022</a>
-            </li>
-            <li><a href="#" data-tab="tab3">2021</a></li>
-            <li><a href="#" data-tab="tab4">2020</a></li>
-            <li><a href="#" data-tab="tab5">2019</a></li>
-            <li><a href="#" data-tab="tab6">2018</a></li>
-            <li><a href="#" data-tab="tab7">2017</a></li>
-          </ul>
+          <p>본 자캐목록 정리는 2023년에 진행한 것으로 2017년부터 기억이 상당히 유실되어 있습니다... 많이 빠져있습니다.</p>
         </div>
-        <!-- tabs-menu -->
+      </header>
 
-        <div class="tab1 tabs first-tab">
-          <!-- <div>
-            <p class="ch1"></p>
-            <h5>제목1 - Untitled2048</h5>
-            <span>Content1</span>
-          </div>
-          <div>
-            <p class="ch2"></p>
-            <h5>제목1</h5>
-            <span>Content1</span>
-          </div>
-          <div>
-            <p class="ch3"></p>
-            <h5>제목1</h5>
-            <span>Content1</span>
-          </div> -->
+      <div class="tabs-menu">
+        <ul>
+          <li>
+            <a class="active_tab_class" href="#" data-tab="tab1">2022</a>
+          </li>
+          <li><a href="#" data-tab="tab2">2021</a></li>
+          <li><a href="#" data-tab="tab3">2020</a></li>
+          <li><a href="#" data-tab="tab4">2019</a></li>
+          <li><a href="#" data-tab="tab5">2018</a></li>
+          <li><a href="#" data-tab="tab6">2017</a></li>
+        </ul>
+      </div>
 
-          <pre>
-            유클리드 호텔(단유리)(운영) - 엘가 아인테일즈
-            Container B-13(컨비삼) - 스펫
-            2038 해저 도시 일지 - 케이(케이치 라이어)
-            그리고 지금 러닝캐 (추후 기재)
-
-          </pre>
+      <div class="tab1 tabs first-tab">
+        <div class="tabs_inner">
+          <p class="ch1"></p>
+          <h5>유클리드 호텔(운영)</h5>
+          <span>엘가 아인테일즈</span>
         </div>
-        <!-- .tab1 -->
-
-        <div class="tab2 tabs">
-          <p>OZMA 우주의 항해자들(운영) - 한스 또다시, 지상낙원(운영) - 하루키 토우마</p>
+        <div class="tabs_inner">
+          <p class="ch2"></p>
+          <h5>2038 해저 도시 일지</h5>
+          <span>케이(케이치 라이어)</span>
         </div>
-        <!-- .tab2 -->
-
-        <div class="tab3 tabs">
-          <pre>
-                도시의 뒤편(운영) - 듀크 칼리번
-                탱지 속에서 피어난 새싹 - 딤
-                쿠안틸 (아진짜커뮤이름이생각이안나네)
-                드리밍 렘 프로젝트(운영) - 나츠네 이치카
-                십일야 :: 나가츠키 학원 요괴록 - 쿠스노키 쥰이치
-                테디베어 쿠엔토 - 메(메렌피)
-              </pre
-          >
-        </div>
-        <!-- .tab3 -->
-
-        <div class="tab4 tabs">
-          <pre>
-                적극 - 하유민
-                규명 속 심판의 탄생(규심탄) - 크로 (케일 크롬하츠)
-                Dragon Castle - 노아 실베스터
-                우주는 나를 먹는다(단주냠) - 딤
-              </pre
-          >
-        </div>
-
-        <div class="tab5 tabs">
-          <pre>
-                초승달의 도시(단시티)(운영) - 제이드 에스쿠스
-                리엔터 -
-                환상과 소망의 페르텔(운영) - 테디 (에덴 프레드릭)
-                심해를 울리는 자장가(운영) - 네로
-              </pre
-          >
-        </div>
-
-        <div class="tab6 tabs">
-          <pre>
-                단간론파:FOUNA - 페트로 버스터 
-                꿈과 희망의 네버랜드(운영) - 키세츠 카오르  
-              </pre
-          >
+        <div class="tabs_inner">
+          <p class="ch3"></p>
+          <h5>Container B-13</h5>
+          <span>스펫</span>
         </div>
       </div>
+
+      <div class="tab2 tabs">
+        <div class="tabs_inner">
+          <p class="ch4"></p>
+          <h5>OZMA: 우주의 항해자들(운영)</h5>
+          <span>한스</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch5"></p>
+          <h5>또다시, 지상낙원(운영)</h5>
+          <span>하루키 토우마</span>
+        </div>
+      </div>
+
+      <div class="tab3 tabs">
+        <div class="tabs_inner">
+          <p class="ch6"></p>
+          <h5>도시의 뒤편(운영)</h5>
+          <span>듀크 칼리번</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch7"></p>
+          <h5>탱지 속에서 피어난 새싹</h5>
+          <span>딤</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch8"></p>
+          <h5>Unknown</h5>
+          <span>쿠안틸</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch9"></p>
+          <h5>드리밍 렘 프로젝트(운영)</h5>
+          <span>나츠네 이치카</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch10"></p>
+          <h5>십일야 :: 나가츠키 학원 요괴록</h5>
+          <span>쿠스노키 쥰이치</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch11"></p>
+          <h5>테디베어 쿠엔토</h5>
+          <span>메(메렌피)</span>
+        </div>
+      </div>
+
+      <div class="tab4 tabs">
+        <div class="tabs_inner">
+          <p class="ch12"></p>
+          <h5>적극</h5>
+          <span>하유민</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="ch13"></p>
+          <h5>규명 속 심판의 탄생</h5>
+          <span>크로 (케일 크롬하츠)</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>Dragon Castle</h5>
+          <span>노아 실베스터</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>우주는 나를 먹는다</h5>
+          <span>딤</span>
+        </div>
+      </div>
+
+      <div class="tab5 tabs">
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>초승달의 도시(운영)</h5>
+          <span>제이드 에스쿠스</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>포 언더도그</h5>
+          <span>백미루</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>환상과 소망의 페르텔(운영)</h5>
+          <span>테디 (에덴 프레드릭)</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>심해를 울리는 자장가(운영)</h5>
+          <span>네로</span>
+        </div>
+      </div>
+
+      <div class="tab6 tabs">
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>단간론파:FOUNA</h5>
+          <span>페트로 버스터</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>주님, 우리에게 명하시기를</h5>
+          <span>신재호</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>꽃이 져도 나는 너를 잊은 적 없다</h5>
+          <span>크로(케일 크롬하츠) </span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>리엔터</h5>
+          <span>차태강</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>나는 우주를 먹는다</h5>
+          <span>딤</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>사라진 진실은 어디갔는가</h5>
+          <span>타카하시 켄타로</span>
+        </div>
+        <div class="tabs_inner">
+          <p class="unknown"></p>
+          <h5>꿈과 희망의 네버랜드(운영)</h5>
+          <span>키세츠 카오르 </span>
+        </div>
+      </div>
+
+      <!-- <pre>
+        그랜드체이스: 여행의 시작 에테
+
+그랜드체이스: RAID 군터
+
+BlACKOUT 오토
+
+GENOMA 제나드
+
+에서슬론 용병단 아자르 울프강
+
+Keep in mine: 라크 울프
+      </pre> -->
+
       <!-- .tabs -->
     </div>
-
+    <script src="/jquery-2.2.2.min.js"></script>
     <script type="text/javascript">
-      // Inicia o jQuery
-      jQuery(function ($) {
-        // Captura o clique no link do menu das abas
+      $(document).ready(function () {
         $(".tabs-menu ul li a").click(function () {
-          /** Variáveis **/
+          let tab_class = $(this).attr("data-tab");
 
-          // Configura o link clicado
-          var a = $(this);
+          $(".tabs-menu ul li a").removeClass("active_tab_class");
+          $(".tabs").removeClass("active_tab_class");
 
-          // A classe da aba ativa
-          var active_tab_class = "active-tab-menu";
-
-          // Captura o atributo data-tab e gera uma classe
-          var the_tab = "." + a.attr("data-tab");
-
-          // Remove a classe de aba ativa de todas as abas
-          $(".tabs-menu ul li a").removeClass(active_tab_class);
-
-          // Adiciona a classe de aba ativa apenas no link clicado
-          a.addClass(active_tab_class);
-
-          // Adiciona um CSS para ocultar todas as abas
-          $(".tabs-content .tabs").css({
-            display: "none",
-          });
-
-          // Mostra apenas a aba que queremos
-          $(the_tab).show();
-
-          // Não deixa o navegador atualizar a página
-          return false;
+          $(this).addClass("active_tab_class");
+          $("." + tab_class).addClass("active_tab_class");
         });
       });
     </script>
