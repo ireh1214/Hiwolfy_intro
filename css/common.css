@@ -378,7 +378,7 @@ table {
 }
 
 #info_wrap {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   word-break: keep-all;
 }
@@ -432,20 +432,65 @@ table {
   #op_wrap #info_wrap .info_container p {
     font-size: 14px;
   }
+  #index_wrap .navigation a {
+    font-size: 12px;
+  }
+  #index_wrap .navigation a li {
+    width: 138px;
+    height: 138px;
+  }
 }
 /** page structure **/
 .trpg_wrap {
   display: flex;
   flex-direction: column;
+  position: relative;
   max-width: 1000px;
   min-width: 700px;
-  height: 90vh;
+  height: 100vh;
+  overflow-y: hidden;
   background: #fff;
   margin: 0 auto;
   padding: 10px 17px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  overflow-y: scroll;
   padding-bottom: 28px;
+}
+.trpg_wrap .trpg_image {
+  width: 280px;
+  height: 230px;
+  background-image: url("../image/hiwolfy5.png");
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  opacity: 0.7;
+}
+.trpg_wrap details {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  word-break: keep-all;
+  z-index: 100;
+}
+.trpg_wrap details summary {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s;
+  box-shadow: 1px 1px 2px gray;
+}
+.trpg_wrap details .tpt {
+  margin: 5px 0 10px;
+  padding: 10px 20px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 2px gray;
+}
+.trpg_wrap details .tpt p::before {
+  content: "✔";
 }
 .trpg_wrap .trpg_rule {
   width: 700px;
@@ -454,18 +499,38 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 .trpg_wrap .trpg_rule span {
   padding: 4px 12px;
-  border: 2px solid #ccc;
+  background-color: #fff;
   border-radius: 30px;
   font-size: 12.5px;
   color: #000;
   opacity: 0.7;
 }
+.trpg_wrap .trpg_rule span:nth-child(1) {
+  border: 3px solid rgb(0, 228, 38);
+}
+.trpg_wrap .trpg_rule span:nth-child(2) {
+  border: 3px solid rgb(255, 36, 36);
+}
+.trpg_wrap .trpg_rule span:nth-child(3) {
+  border: 3px solid rgb(7, 197, 255);
+}
+.trpg_wrap .trpg_rule span:nth-child(4) {
+  border: 3px solid rgb(255, 189, 9);
+}
+.trpg_wrap .trpg_rule span:nth-child(5) {
+  border: 3px solid rgb(62, 8, 255);
+}
 .trpg_wrap .trpg_rule span:hover {
   opacity: 1;
+}
+.trpg_wrap #targetPn {
+  width: auto;
+  height: 60vh;
+  overflow-y: scroll;
 }
 .trpg_wrap table {
   max-width: 1000px;
@@ -506,4 +571,37 @@ table {
 .trpg_wrap h6 span {
   color: #333;
   font-weight: 700;
+}
+
+@media (max-width: 699px) {
+  .trpg_wrap {
+    width: 91vw;
+    min-width: 300px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: none;
+  }
+  .trpg_wrap .trpg_image {
+    opacity: 0.2;
+  }
+  .trpg_wrap details {
+    width: 100%;
+    font-size: 13px;
+  }
+  .trpg_wrap details .tpt {
+    font-size: 12px;
+  }
+  .trpg_wrap h1 {
+    width: 100%;
+    font-size: 20px;
+    z-index: 10;
+  }
+  .trpg_wrap .trpg_rule {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .trpg_wrap #targetPn {
+    width: 100%;
+  }
 }
