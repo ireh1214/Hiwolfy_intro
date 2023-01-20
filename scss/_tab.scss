@@ -16,14 +16,17 @@
       text-align: center;
       width: 600px;
       margin: 0 auto 24px;
-      line-height: 1.5;
+
+      p {
+        line-height: 1.6;
+      }
     }
 
     .character_img {
-      width: 150px;
-      height: 150px;
-      background-image: url("../image/c0-1.png");
-      margin: 0px auto;
+      width: 180px;
+      height: 130px;
+      background-image: url("../image/hiwolfy.png");
+      margin: 20px auto;
       /* border-radius: 100%; */
     }
   }
@@ -74,6 +77,13 @@
         height: 300px;
         background-color: #fff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: 0.15s all ease-in-out;
+
+        &:hover {
+          overflow: hidden;
+          transform: scale(1.01);
+          // background-size: 110%;
+        }
       }
 
       h5 {
@@ -85,13 +95,17 @@
 
       .ch1 {
         background-image: url("../image/c2.png");
+        background-size: 115%;
       }
       .ch2 {
         background-image: url("../image/c1.png");
+        background-position: 45% 50%;
+        background-size: 125%;
       }
       .ch3 {
         background-image: url("../image/c6.png");
-        background-position: 25% 10%;
+        background-position: 45% 10%;
+        background-size: 125%;
       }
       .ch4 {
         background-image: url("../image/c3.png");
@@ -116,6 +130,58 @@
       }
       .ch11 {
         background-image: url("../image/c5.png");
+      }
+      .ch12 {
+        background-image: url("../image/c13.png");
+        background-position: 30% 20%;
+        background-size: 130%;
+      }
+      .ch13 {
+        background-image: url("../image/c15.png");
+        background-size: 214%;
+        background-position: 50% 20%;
+      }
+      .ch14 {
+        background-image: url("../image/c14.png");
+      }
+      .ch15 {
+        background-image: url("../image/c8.png");
+      }
+      .ch16 {
+        background-image: url("../image/c16.png");
+        background-size: 134%;
+        background-position: 40% 10%;
+      }
+      .ch17 {
+        background-image: url("../image/c17.png");
+      }
+      .ch18 {
+        background-image: url("../image/c18.png");
+      }
+      .ch19 {
+        background-image: url("../image/c19.png");
+        background-position: 80% 0%;
+      }
+      .ch20 {
+        background-image: url("../image/c20.png");
+      }
+      // .ch21 {
+      //   background-image: url("../image/c20.png");
+      // }
+      // .ch22 {
+      //   background-image: url("../image/c20.png");
+      // }
+      .ch23 {
+        background-image: url("../image/c21.png");
+      }
+      .ch24 {
+        background-image: url("../image/c22.png");
+      }
+      // .ch25 {
+      //   background-image: url("../image/c20.png");
+      // }
+      .ch26 {
+        background-image: url("../image/c23.png");
       }
     }
   }

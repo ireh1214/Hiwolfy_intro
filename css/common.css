@@ -195,19 +195,21 @@ table {
   flex-wrap: wrap;
   margin: 24px auto;
 }
+#index_wrap .navigation a {
+  background-color: #eee;
+  text-decoration: none;
+}
 #index_wrap .navigation a li {
   width: 160px;
   height: 160px;
   margin: 8px;
-  background-color: #000;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#index_wrap .navigation a li:hover {
-  -webkit-animation: rotate 0.5s ease-in;
-          animation: rotate 0.5s ease-in;
+#index_wrap .navigation a:hover {
+  text-decoration: underline;
 }
 #index_wrap .title {
   font-size: 36px;
@@ -627,13 +629,15 @@ table {
   text-align: center;
   width: 600px;
   margin: 0 auto 24px;
-  line-height: 1.5;
+}
+#character_wrap header div p {
+  line-height: 1.6;
 }
 #character_wrap header .character_img {
-  width: 150px;
-  height: 150px;
-  background-image: url("../image/c0-1.png");
-  margin: 0px auto;
+  width: 180px;
+  height: 130px;
+  background-image: url("../image/hiwolfy.png");
+  margin: 20px auto;
   /* border-radius: 100%; */
 }
 #character_wrap .tabs-menu {
@@ -675,6 +679,11 @@ table {
   height: 300px;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.15s all ease-in-out;
+}
+#character_wrap .tabs .tabs_inner p:hover {
+  overflow: hidden;
+  transform: scale(1.01);
 }
 #character_wrap .tabs .tabs_inner h5 {
   font-weight: normal;
@@ -684,13 +693,17 @@ table {
 }
 #character_wrap .tabs .tabs_inner .ch1 {
   background-image: url("../image/c2.png");
+  background-size: 115%;
 }
 #character_wrap .tabs .tabs_inner .ch2 {
   background-image: url("../image/c1.png");
+  background-position: 45% 50%;
+  background-size: 125%;
 }
 #character_wrap .tabs .tabs_inner .ch3 {
   background-image: url("../image/c6.png");
-  background-position: 25% 10%;
+  background-position: 45% 10%;
+  background-size: 125%;
 }
 #character_wrap .tabs .tabs_inner .ch4 {
   background-image: url("../image/c3.png");
@@ -715,6 +728,49 @@ table {
 }
 #character_wrap .tabs .tabs_inner .ch11 {
   background-image: url("../image/c5.png");
+}
+#character_wrap .tabs .tabs_inner .ch12 {
+  background-image: url("../image/c13.png");
+  background-position: 30% 20%;
+  background-size: 130%;
+}
+#character_wrap .tabs .tabs_inner .ch13 {
+  background-image: url("../image/c15.png");
+  background-size: 214%;
+  background-position: 50% 20%;
+}
+#character_wrap .tabs .tabs_inner .ch14 {
+  background-image: url("../image/c14.png");
+}
+#character_wrap .tabs .tabs_inner .ch15 {
+  background-image: url("../image/c8.png");
+}
+#character_wrap .tabs .tabs_inner .ch16 {
+  background-image: url("../image/c16.png");
+  background-size: 134%;
+  background-position: 40% 10%;
+}
+#character_wrap .tabs .tabs_inner .ch17 {
+  background-image: url("../image/c17.png");
+}
+#character_wrap .tabs .tabs_inner .ch18 {
+  background-image: url("../image/c18.png");
+}
+#character_wrap .tabs .tabs_inner .ch19 {
+  background-image: url("../image/c19.png");
+  background-position: 80% 0%;
+}
+#character_wrap .tabs .tabs_inner .ch20 {
+  background-image: url("../image/c20.png");
+}
+#character_wrap .tabs .tabs_inner .ch23 {
+  background-image: url("../image/c21.png");
+}
+#character_wrap .tabs .tabs_inner .ch24 {
+  background-image: url("../image/c22.png");
+}
+#character_wrap .tabs .tabs_inner .ch26 {
+  background-image: url("../image/c23.png");
 }
 #character_wrap .tabs.active_tab_class {
   display: flex;
