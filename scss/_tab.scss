@@ -22,13 +22,13 @@
       }
     }
 
-    .character_img {
-      width: 180px;
-      height: 130px;
-      background-image: url("../image/hiwolfy.png");
-      margin: 20px auto;
-      /* border-radius: 100%; */
-    }
+    // .character_img {
+    //   width: 180px;
+    //   height: 130px;
+    //   background-image: url("../image/hiwolfy.png");
+    //   margin: 20px auto;
+    //   /* border-radius: 100%; */
+    // }
   }
 
   /* Menu das abas */
@@ -73,8 +73,8 @@
       text-align: center;
 
       p {
-        width: 230px;
-        height: 300px;
+        width: 260px;
+        height: 350px;
         background-color: #fff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         transition: 0.15s all ease-in-out;
@@ -96,6 +96,20 @@
       .ch1 {
         background-image: url("../image/c2.png");
         background-size: 115%;
+
+        // &:hover::before {
+        //   content: "dddd";
+        // }
+        // &:hover::after {
+        //   content: "";
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: center;
+        //   width: 100%;
+        //   height: 100%;
+        //   opacity: 0.4;
+        //   background-color: #fff;
+        // }
       }
       .ch2 {
         background-image: url("../image/c1.png");
@@ -127,6 +141,7 @@
       }
       .ch10 {
         background-image: url("../image/c9.png");
+        background-position: 50% 0%;
       }
       .ch11 {
         background-image: url("../image/c5.png");
@@ -177,11 +192,35 @@
       .ch24 {
         background-image: url("../image/c22.png");
       }
-      // .ch25 {
-      //   background-image: url("../image/c20.png");
-      // }
+      .ch25 {
+        background-image: url("../image/c27.png");
+      }
       .ch26 {
         background-image: url("../image/c23.png");
+      }
+      .ch27 {
+        background-image: url("../image/c24.png");
+      }
+      .ch28 {
+        background-image: url("../image/c25.png");
+      }
+      .ch29 {
+        background-image: url("../image/c26.png");
+      }
+      .ch30 {
+        background-image: url("../image/c30.png");
+      }
+      .ch31 {
+        background-image: url("../image/c26.png");
+      }
+      .ch32 {
+        background-image: url("../image/c31.png");
+      }
+      .ch33 {
+        background-image: url("../image/c99.png");
+      }
+      .ch34 {
+        background-image: url("../image/c28.png");
       }
     }
   }

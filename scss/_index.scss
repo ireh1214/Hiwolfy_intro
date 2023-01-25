@@ -37,6 +37,16 @@
       // text-indent: -9999px;
       background-color: #eee;
       text-decoration: none;
+      transition: 1.2s ease-in-out;
+
+      &:nth-child(odd) {
+        // background-image: url("../image/hiwolfy.png");
+        background-color: #ccc;
+      }
+
+      &:hover {
+        border-radius: 100%;
+      }
 
       li {
         width: 160px;
@@ -63,9 +73,10 @@
   }
 
   .main_image {
-    width: 320px;
-    height: 240px;
-    background-image: url("../image/hiwolfy4.png");
+    width: 500px;
+    min-width: 300px;
+    height: 420px;
+    background-image: url("../image/hiwolfy0.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -259,6 +270,8 @@
   width: 90%;
   margin: 0 auto;
   word-break: keep-all;
+  font-family: "NEXON";
+  text-align: center;
 
   .info_img {
     min-width: 250px;
@@ -266,21 +279,26 @@
     height: 240px;
     margin: 36px auto 0px;
     background-image: url("/image/hiwolfy3.png");
+
+    &:hover {
+      width: 90%;
+      max-width: 500px;
+      background-size: 100%;
+
+      &::after {
+        content: "2023. 01. 25 수정";
+        background-color: #fff;
+      }
+    }
   }
 
   .info_container {
     max-width: 600px;
     min-width: 300px;
     margin: 24px auto 100px;
-    background-color: $main_bg;
-
-    .info_date {
-      width: 300px;
-      margin: 0 auto;
-      display: block;
-      font-size: 12px;
-      text-align: right;
-    }
+    // padding: 16px 8px;
+    // border: #ddd 1px solid;
+    // border-radius: 50px;
 
     p {
       margin-top: 36px;

@@ -23,12 +23,12 @@
 * {
   background-size: cover;
   background-position: center;
-  font-family: "Mabi";
   list-style: none;
 }
 
 body {
   width: 100%;
+  font-family: "Mabi";
   overflow-x: hidden;
   background-color: #fefefe;
 }
@@ -198,6 +198,13 @@ table {
 #index_wrap .navigation a {
   background-color: #eee;
   text-decoration: none;
+  transition: 1.2s ease-in-out;
+}
+#index_wrap .navigation a:nth-child(odd) {
+  background-color: #ccc;
+}
+#index_wrap .navigation a:hover {
+  border-radius: 100%;
 }
 #index_wrap .navigation a li {
   width: 160px;
@@ -216,9 +223,10 @@ table {
   font-family: "Do Hyeon", sans-serif;
 }
 #index_wrap .main_image {
-  width: 320px;
-  height: 240px;
-  background-image: url("../image/hiwolfy4.png");
+  width: 500px;
+  min-width: 300px;
+  height: 420px;
+  background-image: url("../image/hiwolfy0.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -383,6 +391,8 @@ table {
   width: 90%;
   margin: 0 auto;
   word-break: keep-all;
+  font-family: "NEXON";
+  text-align: center;
 }
 #info_wrap .info_img {
   min-width: 250px;
@@ -391,18 +401,19 @@ table {
   margin: 36px auto 0px;
   background-image: url("/image/hiwolfy3.png");
 }
+#info_wrap .info_img:hover {
+  width: 90%;
+  max-width: 500px;
+  background-size: 100%;
+}
+#info_wrap .info_img:hover::after {
+  content: "2023. 01. 25 수정";
+  background-color: #fff;
+}
 #info_wrap .info_container {
   max-width: 600px;
   min-width: 300px;
   margin: 24px auto 100px;
-  background-color: #fefefe;
-}
-#info_wrap .info_container .info_date {
-  width: 300px;
-  margin: 0 auto;
-  display: block;
-  font-size: 12px;
-  text-align: right;
 }
 #info_wrap .info_container p {
   margin-top: 36px;
@@ -633,13 +644,6 @@ table {
 #character_wrap header div p {
   line-height: 1.6;
 }
-#character_wrap header .character_img {
-  width: 180px;
-  height: 130px;
-  background-image: url("../image/hiwolfy.png");
-  margin: 20px auto;
-  /* border-radius: 100%; */
-}
 #character_wrap .tabs-menu {
   width: 100%;
   background: #eee;
@@ -675,8 +679,8 @@ table {
   text-align: center;
 }
 #character_wrap .tabs .tabs_inner p {
-  width: 230px;
-  height: 300px;
+  width: 260px;
+  height: 350px;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: 0.15s all ease-in-out;
@@ -725,6 +729,7 @@ table {
 }
 #character_wrap .tabs .tabs_inner .ch10 {
   background-image: url("../image/c9.png");
+  background-position: 50% 0%;
 }
 #character_wrap .tabs .tabs_inner .ch11 {
   background-image: url("../image/c5.png");
@@ -769,12 +774,55 @@ table {
 #character_wrap .tabs .tabs_inner .ch24 {
   background-image: url("../image/c22.png");
 }
+#character_wrap .tabs .tabs_inner .ch25 {
+  background-image: url("../image/c27.png");
+}
 #character_wrap .tabs .tabs_inner .ch26 {
   background-image: url("../image/c23.png");
+}
+#character_wrap .tabs .tabs_inner .ch27 {
+  background-image: url("../image/c24.png");
+}
+#character_wrap .tabs .tabs_inner .ch28 {
+  background-image: url("../image/c25.png");
+}
+#character_wrap .tabs .tabs_inner .ch29 {
+  background-image: url("../image/c26.png");
+}
+#character_wrap .tabs .tabs_inner .ch30 {
+  background-image: url("../image/c30.png");
+}
+#character_wrap .tabs .tabs_inner .ch31 {
+  background-image: url("../image/c26.png");
+}
+#character_wrap .tabs .tabs_inner .ch32 {
+  background-image: url("../image/c31.png");
+}
+#character_wrap .tabs .tabs_inner .ch33 {
+  background-image: url("../image/c99.png");
+}
+#character_wrap .tabs .tabs_inner .ch34 {
+  background-image: url("../image/c28.png");
 }
 #character_wrap .tabs.active_tab_class {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.admin_wrap {
+  max-width: 700px;
+  min-width: 300px;
+  margin: 48px auto;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.admin_wrap h2 {
+  font-size: 16px;
+  line-height: 3;
+}
+.admin_wrap li::before {
+  content: "- ";
 }
