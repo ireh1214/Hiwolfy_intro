@@ -12,3 +12,7 @@
     color: aliceblue;
   }
 }
+
+@mixin txtHide {
+  text-indent: -9999px;
+}

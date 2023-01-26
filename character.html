@@ -29,10 +29,12 @@
         </div>
       </header>
 
-      <div class="tabs-menu">
+      <a href="operation.html"> <p class="common_button">운영커뮤 목록</p></a>
+
+      <div class="tabs_menu">
         <ul>
           <li>
-            <a class="active_tab_class" href="#" data-tab="tab1">2022</a>
+            <a class="active_tab" href="#" data-tab="tab1">2022</a>
           </li>
           <li><a href="#" data-tab="tab2">2021</a></li>
           <li><a href="#" data-tab="tab3">2020</a></li>
@@ -42,7 +44,7 @@
         </ul>
       </div>
 
-      <div class="tab1 tabs first-tab">
+      <div class="tab1 tabs first-tab active_tab">
         <div class="tabs_inner">
           <p class="ch1"></p>
           <h5>유클리드 호텔(운영)</h5>
@@ -124,7 +126,7 @@
         </div>
         <div class="tabs_inner">
           <p class="ch15"></p>
-          <h5>우주는 나를 먹는다</h5>
+          <h5>우주는 나를 먹는다(운영)</h5>
           <span>딤</span>
         </div>
       </div>
@@ -179,11 +181,7 @@
           <h5>꿈과 희망의 네버랜드(운영)</h5>
           <span>키세츠 카오르 </span>
         </div>
-        <!-- <div class="tabs_inner">
-          <p class="ch22"></p>
-          <h5>꽃이 져도 나는 너를 잊은 적 없다</h5>
-          <span>김재규(이미지 없음)</span>
-        </div> -->
+
         <div class="tabs_inner">
           <p class="ch27"></p>
           <h5>GENOMA</h5>
@@ -204,6 +202,7 @@
           <h5>그랜드체이스: 여행의 시작</h5>
           <span>에테</span>
         </div>
+
         <div class="tabs_inner">
           <p class="ch32"></p>
           <h5>Dragon Knight 3기</h5>
@@ -227,14 +226,14 @@
     <script src="/jquery-2.2.2.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".tabs-menu ul li a").click(function () {
+        $(".tabs_menu ul li a").click(function () {
           let tab_class = $(this).attr("data-tab");
 
-          $(".tabs-menu ul li a").removeClass("active_tab_class");
-          $(".tabs").removeClass("active_tab_class");
+          $(".tabs_menu ul li a").removeClass("active_tab");
+          $(".tabs").removeClass("active_tab");
 
-          $(this).addClass("active_tab_class");
-          $("." + tab_class).addClass("active_tab_class");
+          $(this).addClass("active_tab");
+          $("." + tab_class).addClass("active_tab");
         });
       });
     </script>

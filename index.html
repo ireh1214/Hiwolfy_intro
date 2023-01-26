@@ -16,25 +16,39 @@
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
+    <script type="text/javascript">
+      function load_commission() {
+        if (confirm("외부 페이지로 이동하께여 괜찮으세여?")) {
+          window.location.href = "https://hi-wolfy.github.io/";
+        }
+      }
+
+      function load_utau() {
+        if (confirm("본 페이지는 외부 페이지입니다! +) 2020년에 윅스로 만든거라 쬠 낡음 이동하께요!!")) {
+          window.location.href = "https://ireh12142.wixsite.com/sound-of-dog";
+        }
+      }
+    </script>
     <div id="index_wrap">
       <div class="profile_wrap">
         <h1 class="title">
           <p class="main_image"></p>
           <!-- Title -->
         </h1>
-        <p>2023. 01. 25 <b> ver. 1. 1. 0</b></p>
+        <p>2023. 01. 26 <b> ver. 1. 1. 1</b></p>
       </div>
 
       <ul class="navigation">
         <a href="info.html"> <li>INFO</li> </a>
-        <a href="operation.html"> <li>운영커뮤페이지</li> </a>
+
         <a href="character.html"> <li>커뮤 캐릭터 정리</li> </a>
         <a href="trpg.html"> <li>TRPG</li> </a>
-        <a href="https://hi-wolfy.github.io/" target="_blank">
-          <li>커미션 페이지 걸어두기</li>
+        <a onclick="load_utau()"> <li>UTAU</li> </a>
+        <a onclick="load_commission()" target="_blank">
+          <li>커미션 페이지</li>
         </a>
-        <a href="void(0);" onclick="alert('관리자가 아니시네여... 돌아가시거나 /admin.html 접속');return false;">
-          <li onclick="">관리자 페이지 로그인</li>
+        <a href="void(0);" onclick="alert('헉! 관리자가 아니시네요... 돌아가시거나 /admin.html 접속');return false;">
+          <li onclick="">관리자 페이지</li>
         </a>
       </ul>
 

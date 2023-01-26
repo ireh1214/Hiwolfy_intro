@@ -20,6 +20,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   background-size: cover;
   background-position: center;
@@ -391,7 +397,7 @@ table {
   width: 90%;
   margin: 0 auto;
   word-break: keep-all;
-  font-family: "NEXON";
+  font-family: "NanumSquareNeo-Variable";
   text-align: center;
 }
 #info_wrap .info_img {
@@ -418,7 +424,7 @@ table {
 #info_wrap .info_container p {
   margin-top: 36px;
   font-size: 16px;
-  line-height: 1.7 !important;
+  line-height: 1.7;
   letter-spacing: 0.2px;
   word-spacing: 1.5px;
 }
@@ -442,7 +448,7 @@ table {
   #op_wrap h2 {
     font-size: 20px;
   }
-  #op_wrap #info_wrap .info_container p {
+  #info_wrap .info_container p {
     font-size: 14px;
   }
   #index_wrap .navigation a {
@@ -506,6 +512,7 @@ table {
   content: "✔";
 }
 .trpg_wrap .trpg_rule {
+  z-index: 10;
   width: 700px;
   margin: 0 auto;
   padding: 24px 0;
@@ -630,6 +637,11 @@ table {
   /* Menu das abas */
   /* Conteúdo das abas */
 }
+#character_wrap .common_button {
+  width: 100px;
+  text-align: center;
+  margin: 24px 24px 24px auto;
+}
 #character_wrap h1 {
   font-size: 26px;
   text-align: center;
@@ -644,30 +656,36 @@ table {
 #character_wrap header div p {
   line-height: 1.6;
 }
-#character_wrap .tabs-menu {
-  width: 100%;
+#character_wrap .tabs_menu {
+  max-width: 900px;
+  min-width: 600px;
   background: #eee;
 }
-#character_wrap .tabs-menu ul {
+#character_wrap .tabs_menu ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-#character_wrap .tabs-menu ul li {
-  width: 16%;
+#character_wrap .tabs_menu ul li {
+  width: 100%;
   text-align: center;
 }
-#character_wrap .tabs-menu ul li a {
+#character_wrap .tabs_menu ul li a {
   display: block;
   padding: 10px 28px;
   text-decoration: none;
   color: #333;
+  transition: 0.3s all;
 }
-#character_wrap .tabs-menu ul li a.active_tab_class {
+#character_wrap .tabs_menu ul li a:hover {
+  color: #fff;
+  background-color: #666;
+}
+#character_wrap .tabs_menu ul li a.active_tab {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #333;
+  background: #111;
   color: #fff;
 }
 #character_wrap .tabs {
@@ -792,9 +810,6 @@ table {
 #character_wrap .tabs .tabs_inner .ch30 {
   background-image: url("../image/c30.png");
 }
-#character_wrap .tabs .tabs_inner .ch31 {
-  background-image: url("../image/c26.png");
-}
 #character_wrap .tabs .tabs_inner .ch32 {
   background-image: url("../image/c31.png");
 }
@@ -804,7 +819,7 @@ table {
 #character_wrap .tabs .tabs_inner .ch34 {
   background-image: url("../image/c28.png");
 }
-#character_wrap .tabs.active_tab_class {
+#character_wrap .tabs.active_tab {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -812,12 +827,26 @@ table {
 }
 
 .admin_wrap {
-  max-width: 700px;
+  font-family: "NanumSquareNeo-Variable";
+  max-width: 600px;
   min-width: 300px;
   margin: 48px auto;
   padding: 10px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.7;
+}
+.admin_wrap .admin_image {
+  text-indent: -9999px;
+  max-width: 400px;
+  min-width: 300px;
+  height: 300px;
+  background-image: url("../image/hiwolfy6.png");
+  margin: 0 auto;
+}
+.admin_wrap h1 {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0 50px;
 }
 .admin_wrap h2 {
   font-size: 16px;
@@ -825,4 +854,8 @@ table {
 }
 .admin_wrap li::before {
   content: "- ";
+}
+.admin_wrap .version li:nth-child(2) {
+  font-weight: bold;
+  background-color: rgb(228, 241, 247);
 }
