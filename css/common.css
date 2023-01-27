@@ -179,6 +179,17 @@ table {
   color: aliceblue;
 }
 
+@-webkit-keyframes blink_effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink_effect {
+  50% {
+    opacity: 0;
+  }
+}
 #index_wrap {
   max-width: 700px;
   min-width: 300px;
@@ -191,6 +202,10 @@ table {
   font-size: 15px;
   color: #333;
   text-align: center;
+}
+#index_wrap .profile_wrap .main_ver {
+  -webkit-animation: blink_effect 2s step-end infinite;
+          animation: blink_effect 2s step-end infinite;
 }
 #index_wrap .navigation {
   width: 100%;
@@ -413,7 +428,7 @@ table {
   background-size: 100%;
 }
 #info_wrap .info_img:hover::after {
-  content: "2023. 01. 25 수정";
+  content: "2023. 01. 27 수정";
   background-color: #fff;
 }
 #info_wrap .info_container {
@@ -436,6 +451,7 @@ table {
 }
 #info_wrap .info_container p::after {
   content: "_";
+  color: #ccc;
 }
 
 .info_foot {
@@ -558,7 +574,6 @@ table {
   margin: 0 auto;
   font-size: 18px;
 }
-.trpg_wrap tr th,
 .trpg_wrap tr td {
   padding: 10px 8px;
   text-align: center;
@@ -572,9 +587,10 @@ table {
 .trpg_wrap tr td:nth-child(4) {
   width: 100px;
 }
-.trpg_wrap tr:nth-child(1) {
+.trpg_wrap tr th {
   cursor: pointer;
   background: #eee;
+  padding: 10px 8px;
 }
 .trpg_wrap h1 {
   font-size: 30px;
@@ -818,6 +834,9 @@ table {
 }
 #character_wrap .tabs .tabs_inner .ch34 {
   background-image: url("../image/c28.png");
+}
+#character_wrap .tabs .tabs_inner .ch35 {
+  background-image: url("../image/c32.png");
 }
 #character_wrap .tabs.active_tab {
   display: flex;

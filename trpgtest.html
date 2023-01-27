@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta property="og:title" content="날득시 인포" />
+    <meta property="og:description" content=":3" />
+    <meta name="google" content="notranslate" />
+
+    <title>RPG</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="/jquery-2.2.2.min.js"></script>
+    <script src="/db2.js"></script>
+    <script>
+      window.onload = function () {
+        var table = document.createElement("table");
+        var targetPn = document.getElementById("targetPn");
+        targetPn.appendChild(table);
+
+        let tableSort = () => {
+          for (var i = 0; i < data.length; i++) {
+            var tr = document.createElement("tr");
+            table.appendChild(tr);
+            for (var j = 0; j < data[i].length; j++) {
+              var td = document.createElement("td");
+              tr.appendChild(td);
+              td.innerHTML = data[i][j];
+            }
+          }
+        };
+        tableSort();
+      };
+    </script>
+  </head>
+  <body>
+    <div class="trpg_wrap">
+      <!-- <p class="trpg_image"></p> -->
+      <h1>책장 목록🌱</h1>
+      <!-- <details> -->
+
+      <!-- <p><button>시나리오 가나다순 정렬</button><button>키퍼링 횟수 정렬</button></p> -->
+      <div id="targetPn">
+        <table>
+          <th>책 이름</th>
+          <th>장르</th>
+          <th>읽은 횟수</th>
+          <th>소장 여부</th>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript"></script>
+  </body>
+</html>

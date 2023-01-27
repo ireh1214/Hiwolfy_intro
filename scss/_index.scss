@@ -11,6 +11,12 @@
 //   }
 // }
 
+@keyframes blink_effect {
+  50% {
+    opacity: 0;
+  }
+}
+
 #index_wrap {
   max-width: 700px;
   min-width: 300px;
@@ -23,6 +29,12 @@
   font-size: 15px;
   color: #333;
   text-align: center;
+
+  .profile_wrap {
+    .main_ver {
+      animation: blink_effect 2s step-end infinite;
+    }
+  }
 
   .navigation {
     width: 100%;
@@ -286,7 +298,7 @@
       background-size: 100%;
 
       &::after {
-        content: "2023. 01. 25 수정";
+        content: "2023. 01. 27 수정";
         background-color: #fff;
       }
     }
@@ -316,6 +328,7 @@
 
       &::after {
         content: "_";
+        color: #ccc;
       }
     }
   }

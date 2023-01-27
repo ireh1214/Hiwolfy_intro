@@ -114,7 +114,6 @@
   }
 
   tr {
-    th,
     td {
       padding: 10px 8px;
       text-align: center;
@@ -132,9 +131,10 @@
       width: 100px;
     }
 
-    &:nth-child(1) {
+    th {
       cursor: pointer;
       background: #eee;
+      padding: 10px 8px;
     }
   }
 
