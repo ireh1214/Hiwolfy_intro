@@ -179,12 +179,6 @@ table {
   color: aliceblue;
 }
 
-@-webkit-keyframes blink_effect {
-  50% {
-    opacity: 0;
-  }
-}
-
 @keyframes blink_effect {
   50% {
     opacity: 0;
@@ -204,8 +198,7 @@ table {
   text-align: center;
 }
 #index_wrap .profile_wrap .main_ver {
-  -webkit-animation: blink_effect 2s step-end infinite;
-          animation: blink_effect 2s step-end infinite;
+  animation: blink_effect 2s step-end infinite;
 }
 #index_wrap .navigation {
   width: 100%;
@@ -482,7 +475,7 @@ table {
   position: relative;
   max-width: 1000px;
   min-width: 700px;
-  height: 100vh;
+  height: 90vh;
   overflow-y: hidden;
   background: #fff;
   margin: 0 auto;
@@ -500,7 +493,7 @@ table {
   opacity: 0.7;
 }
 .trpg_wrap details {
-  width: 500px;
+  width: 520px;
   margin: 0 auto;
   background-color: #fff;
   word-break: keep-all;
@@ -517,12 +510,16 @@ table {
   box-shadow: 1px 1px 2px gray;
 }
 .trpg_wrap details .tpt {
+  display: block;
   margin: 5px 0 10px;
   padding: 10px 20px;
   line-height: 25px;
   border-radius: 5px;
   border: 1px solid #333;
   box-shadow: 1px 1px 2px gray;
+}
+.trpg_wrap details .tpt p {
+  margin: 30px 0px 10px;
 }
 .trpg_wrap details .tpt p::before {
   content: "✔";
@@ -563,34 +560,58 @@ table {
 .trpg_wrap .trpg_rule span:hover {
   opacity: 1;
 }
+.trpg_wrap .search_input {
+  width: 300px;
+  margin: 20px auto 50px;
+  padding: 8px 12px;
+  font-family: "mabi";
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.trpg_wrap input {
+  outline: none;
+  transition: 0.4s all;
+}
+.trpg_wrap input:focus {
+  border: 1px solid #333;
+  border-radius: 50px;
+}
+.trpg_wrap .hr {
+  width: 200px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0px auto 30px;
+}
 .trpg_wrap #targetPn {
-  width: auto;
-  height: 60vh;
+  width: 100%;
+  margin: 0 auto;
   overflow-y: scroll;
 }
-.trpg_wrap table {
-  max-width: 1000px;
-  min-width: 700px;
+.trpg_wrap #targetPn table {
+  width: 90%;
   margin: 0 auto;
+  min-width: 900px;
   font-size: 18px;
 }
-.trpg_wrap tr td {
+.trpg_wrap #targetPn table tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+.trpg_wrap #targetPn table tr td {
   padding: 10px 8px;
   text-align: center;
 }
-.trpg_wrap tr td:nth-child(1) {
+.trpg_wrap #targetPn table tr td:nth-child(1) {
+  width: auto;
   text-align: left;
 }
-.trpg_wrap tr td:nth-child(3) {
+.trpg_wrap #targetPn table tr td:nth-child(2) {
+  width: 150px;
+}
+.trpg_wrap #targetPn table tr td:nth-child(3) {
   width: 100px;
 }
-.trpg_wrap tr td:nth-child(4) {
-  width: 100px;
-}
-.trpg_wrap tr th {
-  cursor: pointer;
-  background: #eee;
-  padding: 10px 8px;
+.trpg_wrap #targetPn table tr td:nth-child(4) {
+  width: 50px;
 }
 .trpg_wrap h1 {
   font-size: 30px;
@@ -612,7 +633,8 @@ table {
 
 @media (max-width: 699px) {
   .trpg_wrap {
-    width: 91vw;
+    width: 95vw;
+    height: 98vh;
     min-width: 300px;
     margin: 0 auto;
     overflow-x: hidden;

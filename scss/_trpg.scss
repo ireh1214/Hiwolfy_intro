@@ -6,7 +6,7 @@
   position: relative;
   max-width: 1000px;
   min-width: 700px;
-  height: 100vh;
+  height: 90vh;
   overflow-y: hidden;
   background: #fff;
   margin: 0 auto;
@@ -25,7 +25,7 @@
   }
 
   details {
-    width: 500px;
+    width: 520px;
     margin: 0 auto;
     background-color: #fff;
     word-break: keep-all;
@@ -44,12 +44,17 @@
     }
 
     .tpt {
+      display: block;
       margin: 5px 0 10px;
       padding: 10px 20px;
       line-height: 25px;
       border-radius: 5px;
       border: 1px solid #333;
       box-shadow: 1px 1px 2px gray;
+
+      p {
+        margin: 30px 0px 10px;
+      }
 
       p::before {
         content: "✔";
@@ -100,41 +105,111 @@
     }
   }
 
+  .search_input {
+    width: 300px;
+    margin: 20px auto 50px;
+    padding: 8px 12px;
+    font-family: "mabi";
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  input {
+    outline: none;
+    transition: 0.4s all;
+  }
+  input:focus {
+    border: 1px solid #333;
+    border-radius: 50px;
+  }
+
+  .hr {
+    width: 200px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0px auto 30px;
+  }
+
   #targetPn {
-    width: auto;
-    height: 60vh;
-    overflow-y: scroll;
-  }
-
-  table {
-    max-width: 1000px;
-    min-width: 700px;
+    width: 100%;
     margin: 0 auto;
-    font-size: 18px;
-  }
+    overflow-y: scroll;
 
-  tr {
-    td {
-      padding: 10px 8px;
-      text-align: center;
-    }
+    table {
+      width: 90%;
+      margin: 0 auto;
+      min-width: 900px;
+      font-size: 18px;
 
-    td:nth-child(1) {
-      text-align: left;
-    }
+      // thead {
+      //   width: 700px;
+      //   margin: 0 auto;
+      //   padding: 0;
+      //   font-size: 18px;
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: space-around;
 
-    td:nth-child(3) {
-      width: 100px;
-    }
+      //   tr {
+      //     width: 55%;
+      //     display: flex;
 
-    td:nth-child(4) {
-      width: 100px;
-    }
+      //     th {
+      //       width: 100%;
+      //       padding: 10px 8px;
+      //       display: flex;
+      //       flex-direction: row;
+      //       align-items: center;
+      //       justify-content: center;
+      //       -ms-user-select: none;
+      //       -moz-user-select: -moz-none;
+      //       -khtml-user-select: none;
+      //       -webkit-user-select: none;
+      //       user-select: none;
 
-    th {
-      cursor: pointer;
-      background: #eee;
-      padding: 10px 8px;
+      //       &::before {
+      //         content: "< ";
+      //         color: #999;
+      //       }
+
+      //       &::after {
+      //         content: " >";
+      //         color: #999;
+      //       }
+
+      //       &:nth-child(2) {
+      //         margin-left: auto;
+      //       }
+      //     }
+      //   }
+      // }
+
+      tr {
+        &:nth-child(even) {
+          background-color: #f6f6f6;
+        }
+        td {
+          padding: 10px 8px;
+          text-align: center;
+
+          &:nth-child(1) {
+            width: auto;
+            text-align: left;
+          }
+
+          &:nth-child(2) {
+            width: 150px;
+          }
+
+          &:nth-child(3) {
+            width: 100px;
+          }
+
+          &:nth-child(4) {
+            width: 50px;
+          }
+        }
+      }
     }
   }
 
@@ -160,7 +235,8 @@
 
 @media (max-width: 699px) {
   .trpg_wrap {
-    width: 91vw;
+    width: 95vw;
+    height: 98vh;
     min-width: 300px;
     margin: 0 auto;
     overflow-x: hidden;
