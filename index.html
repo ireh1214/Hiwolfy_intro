@@ -31,13 +31,31 @@
       }
     </script>
     <div id="index_wrap">
+      <div id="modal">
+        <h4>
+          도와준사람
+          <p id="close"></p>
+        </h4>
+        <p class="modal_img"></p>
+        <div>
+          <p>익명의 그림지원</p>
+          <p>@마눌먐미</p>
+          <p>@hotottuk</p>
+        </div>
+      </div>
+      <div id="modal_bg"></div>
+
+      <div id="modal_open" class="thanks">
+        <span>+</span>
+      </div>
+
       <div class="profile_wrap">
         <h1 class="title">
           <p class="main_image"></p>
           <!-- Title -->
         </h1>
         <p class="main_ver">
-          2023. 02. 17 <b> ver. <span id="version"></span></b>
+          <span id="date"></span> <b> ver. <span id="version"></span></b>
         </p>
       </div>
 
@@ -69,7 +87,7 @@
           <span>SoundCloud</span>
         </a>
       </div>
-      <p class="copy">&copy; Hi_wolfy All Rights Reserved.</p>
+      <p class="copy" id="copy"></p>
     </div>
   </body>
 </html>

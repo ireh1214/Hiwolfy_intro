@@ -106,11 +106,12 @@
   }
 
   .search_input {
-    width: 300px;
+    width: 400px;
     margin: 20px auto 50px;
     padding: 8px 12px;
     font-family: "mabi";
     border-radius: 4px;
+    font-size: 20px;
     border: 1px solid #ccc;
   }
 
@@ -135,54 +136,43 @@
     margin: 0 auto;
     overflow-y: scroll;
 
+    ul {
+      width: 90%;
+      margin: 0 auto;
+      min-width: 900px;
+      font-size: 18px;
+      display: flex;
+      border-bottom: 1px solid #000;
+
+      li {
+        padding: 10px 8px;
+        text-align: center;
+        font-weight: 900;
+
+        &:nth-child(1) {
+          width: auto;
+        }
+
+        &:nth-child(2) {
+          width: 150px;
+          margin-left: auto;
+        }
+
+        &:nth-child(3) {
+          width: 100px;
+        }
+
+        &:nth-child(4) {
+          width: 100px;
+        }
+      }
+    }
+
     table {
       width: 90%;
       margin: 0 auto;
       min-width: 900px;
       font-size: 18px;
-
-      // thead {
-      //   width: 700px;
-      //   margin: 0 auto;
-      //   padding: 0;
-      //   font-size: 18px;
-      //   display: flex;
-      //   flex-direction: row;
-      //   justify-content: space-around;
-
-      //   tr {
-      //     width: 55%;
-      //     display: flex;
-
-      //     th {
-      //       width: 100%;
-      //       padding: 10px 8px;
-      //       display: flex;
-      //       flex-direction: row;
-      //       align-items: center;
-      //       justify-content: center;
-      //       -ms-user-select: none;
-      //       -moz-user-select: -moz-none;
-      //       -khtml-user-select: none;
-      //       -webkit-user-select: none;
-      //       user-select: none;
-
-      //       &::before {
-      //         content: "< ";
-      //         color: #999;
-      //       }
-
-      //       &::after {
-      //         content: " >";
-      //         color: #999;
-      //       }
-
-      //       &:nth-child(2) {
-      //         margin-left: auto;
-      //       }
-      //     }
-      //   }
-      // }
 
       tr {
         &:nth-child(even) {
@@ -193,7 +183,6 @@
           text-align: center;
 
           &:nth-child(1) {
-            width: auto;
             text-align: left;
           }
 
@@ -206,7 +195,7 @@
           }
 
           &:nth-child(4) {
-            width: 50px;
+            width: 100px;
           }
         }
       }
@@ -235,8 +224,10 @@
 
 @media (max-width: 699px) {
   .trpg_wrap {
-    width: 95vw;
-    height: 98vh;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
     min-width: 300px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -255,6 +246,11 @@
       }
     }
 
+    .search_input {
+      width: 90%;
+      font-size: 14px;
+    }
+
     h1 {
       width: 100%;
       font-size: 20px;
@@ -268,6 +264,11 @@
 
     #targetPn {
       width: 100%;
+
+      ul li {
+        font-size: 15px;
+      }
+
       table {
         font-size: 14.5px;
       }
