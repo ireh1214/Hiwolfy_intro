@@ -106,13 +106,20 @@
   }
 
   .search_input {
-    width: 400px;
-    margin: 20px auto 50px;
-    padding: 8px 12px;
+    width: 360px;
+    margin: 20px auto 24px;
+    box-sizing: border-box;
+    padding: 10px 16px 10px 50px;
     font-family: "mabi";
-    border-radius: 4px;
-    font-size: 20px;
-    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    background-image: url("../image/icon/search.png");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 12px;
+    opacity: 0.5;
   }
 
   input {
@@ -120,8 +127,9 @@
     transition: 0.4s all;
   }
   input:focus {
-    border: 1px solid #333;
-    border-radius: 50px;
+    border: 1px solid #000;
+    background-color: #fff;
+    opacity: 1;
   }
 
   .hr {
