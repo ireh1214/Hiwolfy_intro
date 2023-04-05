@@ -649,24 +649,26 @@ table {
   #index_wrap .navigation {
     width: 100%;
     min-width: none;
-    max-width: none;
+    max-width: 320px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 5px;
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-auto-rows: 7.5rem 7.5rem 7.5rem;
+    grid-gap: 0px;
     justify-content: center;
     align-items: center;
   }
   #index_wrap .navigation a {
     text-decoration: none;
     width: 100%;
-    height: 145px;
+    height: 135px;
     font-size: 12px;
     background-size: 60%;
   }
   #index_wrap .social_wrap {
     width: 100%;
     min-width: 280px;
+    max-width: 280px;
+    font-size: 12px;
   }
   #index_wrap .thanks {
     position: fixed;
