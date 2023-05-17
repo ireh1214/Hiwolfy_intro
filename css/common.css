@@ -294,22 +294,31 @@ table {
   z-index: 100;
 }
 #index_wrap .profile_wrap .main_ver {
+  font-size: 13px;
   animation: blink_effect 2s step-end infinite;
 }
+#index_wrap hr {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
 #index_wrap .navigation {
-  width: 450px;
+  width: 400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 10px;
+  grid-gap: 0px;
   justify-content: center;
   align-items: center;
   margin: 24px auto;
 }
 #index_wrap .navigation a {
   text-decoration: none;
-  width: 150px;
-  height: 170px;
+  width: 100%;
+  height: 140px;
   transition: 0.3s ease-in-out;
   background-size: 80%;
   background-position: center;
@@ -337,10 +346,10 @@ table {
   background-image: url("../image/main/2-2.png");
 }
 #index_wrap .navigation a:nth-child(3) {
-  background-image: url("../image/main/4-1.png");
+  background-image: url("../image/main/4-2.png");
 }
 #index_wrap .navigation a:nth-child(3):hover {
-  background-image: url("../image/main/4-2.png");
+  background-image: url("../image/main/4-1.png");
 }
 #index_wrap .navigation a:nth-child(5) {
   background-image: url("../image/main/3-1.png");
@@ -364,13 +373,14 @@ table {
   font-family: "Do Hyeon", sans-serif;
 }
 #index_wrap .main_image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-image: url("../image/profile.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 24px auto;
+  margin: 24px auto 16px;
   transition: 0.5s ease-in-out;
+  border: 1px solid #000;
 }
 #index_wrap .social_wrap {
   width: 300px;
@@ -473,10 +483,12 @@ table {
   border: 8px solid #fff;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-size: 100%;
 }
 #op_wrap .logo_wrap .logo_container .logo_img:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-size: 105%;
 }
 #op_wrap .logo_wrap .logo_container .logo_1 {
   background-image: url("../image/logo1.png");
@@ -510,6 +522,9 @@ table {
 }
 #op_wrap .logo_wrap .logo_container .logo_11 {
   background-image: url("../image/logo11.png");
+}
+#op_wrap .logo_wrap .logo_container .logo_12 {
+  background-image: url("../image/logo12.png");
 }
 #op_wrap .operation_foot {
   width: 300px;
@@ -651,7 +666,7 @@ table {
     min-width: none;
     max-width: 320px;
     display: grid;
-    grid-template-columns: repeat(2, 0.4fr);
+    grid-template-columns: repeat(3, 0.4fr);
     grid-auto-rows: 7.5rem 7.5rem 7.5rem;
     grid-gap: 0px;
     justify-content: center;
@@ -660,9 +675,11 @@ table {
   #index_wrap .navigation a {
     text-decoration: none;
     width: 100%;
-    height: 135px;
+    height: auto;
     font-size: 12px;
-    background-size: 60%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   #index_wrap .social_wrap {
     width: 100%;
@@ -786,6 +803,26 @@ table {
 .utau_wrap .utau_container .notice p {
   margin-top: 18px;
   line-height: 1.4;
+}
+.utau_wrap .utau_download {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+.utau_wrap .utau_download .hitch {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-right: 40px;
+}
+.utau_wrap .utau_download .hetch {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 
 #sidebar {
