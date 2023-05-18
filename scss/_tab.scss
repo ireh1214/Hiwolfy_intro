@@ -90,12 +90,13 @@
         height: 350px;
         background-color: #fff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: 0.15s all ease-in-out;
+        transition: 0.3s all ease-in-out;
+        background-repeat: no-repeat;
 
         &:hover {
-          overflow: hidden;
-          transform: scale(1.01);
-          // background-size: 110%;
+          border: 5px solid #000;
+          border-radius: 4px;
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.24);
         }
       }
 
@@ -110,54 +111,98 @@
         background-image: url("../image/c2.png");
         background-size: 115%;
 
-        // &:hover::before {
-        //   content: "dddd";
-        // }
-        // &:hover::after {
-        //   content: "";
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        //   width: 100%;
-        //   height: 100%;
-        //   opacity: 0.4;
-        //   background-color: #fff;
-        // }
+        &:hover {
+          background-size: 130%;
+          background-position: center 0px;
+        }
       }
       .ch2 {
         background-image: url("../image/c1.png");
         background-position: 45% 50%;
         background-size: 125%;
+        &:hover {
+          background-size: 140%;
+          background-position: center 0px;
+        }
       }
       .ch3 {
         background-image: url("../image/c6.png");
         background-position: 45% 10%;
         background-size: 125%;
+        &:hover {
+          background-size: 140%;
+          background-position: 55% 8%;
+        }
       }
       .ch4 {
         background-image: url("../image/c3.png");
+        background-size: 127%;
+
+        &:hover {
+          background-size: 150%;
+          background-position: center 0;
+        }
       }
       .ch5 {
         background-image: url("../image/c4.png");
+        background-size: 120%;
+        &:hover {
+          background-size: 140%;
+          background-position: center 0;
+        }
       }
       .ch6 {
         background-image: url("../image/c7.png");
+        background-size: 160%;
+        &:hover {
+          background-size: 180%;
+          background-position: 40% 0;
+        }
       }
       .ch7 {
         background-image: url("../image/c12.png");
+        background-size: 118%;
+
+        &:hover {
+          background-size: 140%;
+          background-position: 100% 50%;
+        }
       }
       .ch8 {
         background-image: url("../image/c11.png");
+        background-size: 100%;
+
+        &:hover {
+          background-size: 140%;
+          background-position: 100% 0px;
+        }
       }
       .ch9 {
         background-image: url("../image/c10.png");
+        background-size: 120%;
+
+        &:hover {
+          background-size: 140%;
+          background-position: center 20%;
+        }
       }
       .ch10 {
         background-image: url("../image/c9.png");
+        background-size: 100%;
         background-position: 50% 0%;
+
+        &:hover {
+          background-size: 120%;
+          background-position: center 0%;
+        }
       }
       .ch11 {
         background-image: url("../image/c5.png");
+        background-size: 110%;
+        &:hover {
+          background-size: 130%;
+          background-position: center 0%;
+        }
       }
       .ch12 {
         background-image: url("../image/c13.png");
@@ -234,6 +279,11 @@
       }
       .ch35 {
         background-image: url("../image/c32.png");
+        background-size: 120%;
+        &:hover {
+          background-size: 160%;
+          background-position: center 0%;
+        }
       }
     }
   }
