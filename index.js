@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const version = document.getElementById("version");
-  version.innerHTML = "1. 2. 5";
+  version.innerHTML = "1. 2. 8";
 
   const date = document.getElementById("date");
-  date.innerHTML = "2023. 04. 04";
+  date.innerHTML = "2023. 05. 18";
 
   const copy = document.getElementById("copy");
   var now = new Date();
