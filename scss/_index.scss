@@ -37,14 +37,17 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 55px;
-    height: 55px;
-    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #000;
     border-radius: 50%;
     cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 40px;
 
     &:hover {
       background-color: #999;
@@ -127,7 +130,7 @@
     z-index: 100;
   }
 
-  .profile_wrap {
+  .profile_container {
     .main_ver {
       font-size: 13px;
       animation: blink_effect 2s step-end infinite;
@@ -142,7 +145,7 @@
     background-color: #ddd;
   }
 
-  .navigation {
+  nav {
     width: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -153,13 +156,16 @@
     margin: 24px auto;
 
     a {
-      text-decoration: none;
+      display: flex;
+      position: relative;
       width: 100%;
       height: 170px;
+      text-decoration: none;
       transition: 0.3s ease-in-out;
       background-size: 90%;
       background-position: center;
       background-repeat: no-repeat;
+      color: #fff;
 
       &:hover {
         animation: float 1s ease-in-out infinite;
@@ -213,74 +219,55 @@
         }
       }
 
-      li {
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        display: flex;
-        position: relative;
-        &::before {
-          position: absolute;
-          width: 80%;
-          left: 50%;
-          transform: translateX(-50%);
-          padding: 4px 0px;
-          line-height: 1;
-          content: "";
-        }
+      &::before {
+        position: absolute;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4px 0px;
+        line-height: 1;
+        content: "";
       }
 
       &:nth-child(1) {
-        li {
-          &::before {
-            content: "설명서";
-            background-color: #f84f4f;
-          }
+        &::before {
+          content: "설명서";
+          background-color: #f84f4f;
         }
       }
 
       &:nth-child(2) {
-        li {
-          &::before {
-            content: "러닝커뮤 목록";
-            background-color: #3ac952;
-          }
+        &::before {
+          content: "러닝커뮤 목록";
+          background-color: #3ac952;
         }
       }
 
       &:nth-child(3) {
-        li {
-          &::before {
-            content: "TRPG 설명서";
-            background-color: #e4a700;
-          }
+        &::before {
+          content: "TRPG 설명서";
+          background-color: #e4a700;
         }
       }
 
       &:nth-child(4) {
-        li {
-          &::before {
-            content: "UTAU";
-            background-color: #0294d8;
-          }
+        &::before {
+          content: "UTAU";
+          background-color: #0294d8;
         }
       }
 
       &:nth-child(5) {
-        li {
-          &::before {
-            content: "커미션 페이지";
-            background-color: #583048;
-          }
+        &::before {
+          content: "커미션 페이지";
+          background-color: #583048;
         }
       }
 
       &:nth-child(6) {
-        li {
-          &::before {
-            content: "admin page";
-            background-color: #000;
-          }
+        &::before {
+          content: "admin page";
+          background-color: #000;
         }
       }
     }
@@ -426,7 +413,8 @@
         background-size: 100%;
 
         &:hover {
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
+            0 10px 10px rgba(0, 0, 0, 0.22);
           background-size: 105%;
         }
       }
@@ -621,7 +609,7 @@
     margin: 0 auto 100px;
     padding: 0;
 
-    .navigation {
+    nav {
       width: 100%;
       min-width: none;
       max-width: 320px;
@@ -651,13 +639,10 @@
       font-size: 12px;
     }
     .thanks {
-      position: fixed;
       bottom: 20px;
       right: 20px;
       width: 45px;
       height: 45px;
-      border-radius: 50%;
-      cursor: pointer;
     }
   }
 

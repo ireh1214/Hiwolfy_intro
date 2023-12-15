@@ -12,7 +12,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <script src="./index.js"></script>
   </head>
@@ -44,11 +47,9 @@
       </div>
       <div id="modal_bg"></div>
 
-      <div id="modal_open" class="thanks">
-        <span>+</span>
-      </div>
+      <button type="button" id="modal_open" class="thanks">+</button>
 
-      <div class="profile_wrap">
+      <div class="profile_container">
         <h1 class="title">
           <p class="main_image"></p>
           <!-- Title -->
@@ -62,18 +63,14 @@
         </p>
       </div>
       <hr />
-      <ul class="navigation">
-        <a href="info.html"><li>INFO</li></a>
-        <a href="character.html"><li>커뮤 캐릭터 정리</li></a>
-        <a href="trpg.html"><li>TRPG</li></a>
-        <a onclick="load_utau()"><li>UTAU</li></a>
-        <a onclick="load_commission()" target="_blank">
-          <li>커미션 페이지</li>
-        </a>
-        <a href="admin.html">
-          <li onclick="">관리자 페이지</li>
-        </a>
-      </ul>
+      <nav>
+        <a href="info.html">INFO</a>
+        <a href="character.html">커뮤 캐릭터 정리</a>
+        <a href="trpg.html">TRPG</a>
+        <a onclick="load_utau()">UTAU</a>
+        <a onclick="load_commission()" target="_blank"> 커미션 페이지 </a>
+        <a href="admin.html"> 관리자 페이지 </a>
+      </nav>
 
       <div class="social_wrap">
         <a href="https://github.com/ireh1214" target="_blank">
