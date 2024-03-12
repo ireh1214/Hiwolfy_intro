@@ -14,16 +14,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/common.css" />
     <script src="/jquery-2.2.2.min.js"></script>
     <script src="/db.js"></script>
     <script type="text/javascript">
       window.onload = function () {
-        let table = document.createElement("table");
-        let targetPn = document.getElementById("targetPn");
-        targetPn.appendChild(table);
+        let table = document.createElement("table")
+        let targetPn = document.getElementById("targetPn")
+        targetPn.appendChild(table)
 
         // // table head 생성
         // let tableHead = document.createElement("thead");
@@ -42,70 +45,92 @@
         // }
 
         // table body 생성
-        let tableBody = document.createElement("tbody");
-        table.appendChild(tableBody);
+        let tableBody = document.createElement("tbody")
+        table.appendChild(tableBody)
 
         // data 추가
         for (let i = 0; i < data.length; i++) {
-          let tr = document.createElement("tr");
-          tableBody.appendChild(tr);
+          let tr = document.createElement("tr")
+          tableBody.appendChild(tr)
           for (let j = 0; j < data[i].length; j++) {
-            let td = document.createElement("td");
-            tr.appendChild(td);
-            td.innerHTML = data[i][j];
+            let td = document.createElement("td")
+            tr.appendChild(td)
+            td.innerHTML = data[i][j]
           }
         }
         // 검색기능
 
-        let searchButton = document.getElementById("searchButton");
-        let searchInput = document.getElementById("searchInput");
+        let searchButton = document.getElementById("searchButton")
+        let searchInput = document.getElementById("searchInput")
 
         searchInput.addEventListener("keyup", function () {
-          let searchInput = document.getElementById("searchInput");
-          let filter = searchInput.value.toUpperCase();
-          let table = document.querySelector("table");
-          let rows = table.getElementsByTagName("tr");
+          let searchInput = document.getElementById("searchInput")
+          let filter = searchInput.value.toUpperCase()
+          let table = document.querySelector("table")
+          let rows = table.getElementsByTagName("tr")
           for (let i = 0; i < rows.length; i++) {
-            let cells = rows[i].getElementsByTagName("td");
-            let match = false;
+            let cells = rows[i].getElementsByTagName("td")
+            let match = false
             for (let j = 0; j < cells.length; j++) {
-              let cell = cells[j];
+              let cell = cells[j]
               if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                match = true;
-                break;
+                match = true
+                break
               }
             }
             if (match) {
-              rows[i].style.display = "";
+              rows[i].style.display = ""
             } else {
-              rows[i].style.display = "none";
+              rows[i].style.display = "none"
             }
           }
-        });
+        })
         // ----
-      };
+      }
     </script>
   </head>
   <body>
     <div class="trpg_wrap">
-      <p class="trpg_image"></p>
       <h1>날득시 시나리오 목록🌱</h1>
-      <details>
+      <input
+        type="text"
+        id="searchInput"
+        class="search_input"
+        placeholder="검색하셔도 됩니다"
+      />
+      <!-- <details>
         <summary>설명서</summary>
         <div class="tpt">
           <p>
-            혹시 몰라 제일 앞에 적는 것... 저는 커뮤니티도 러닝하고 TRPG도 하지만은 커뮤>TRPG를 당연하게 생각하지 않습니다.
+            혹시 몰라 제일 앞에 적는 것... 저는 커뮤니티도 러닝하고 TRPG도
+            하지만은 커뮤>TRPG를 당연하게 생각하지 않습니다.
             <strong>오히려 그런 흐름을 지양합니다.</strong>
-            상호간의 배려가 있는 세션을 지향하며, 저도 그런 환경을 만들 일원이 되려고 노력하고 있어요. 자주 TRPG를 하지는 않지만... 여전히 좋아하는 취미이기 때문에 가끔 즐겁게 다녀옵니다. 시나리오집은 어차피 그렇게 많이 없기도 해서 일괄 기재하지 않았어여
+            상호간의 배려가 있는 세션을 지향하며, 저도 그런 환경을 만들 일원이
+            되려고 노력하고 있어요. 자주 TRPG를 하지는 않지만... 여전히 좋아하는
+            취미이기 때문에 가끔 즐겁게 다녀옵니다. 시나리오집은 어차피 그렇게
+            많이 없기도 해서 일괄 기재하지 않았어여
           </p>
 
-          <p>라이터분들의 허가 하에 (고맙습니다!!) BGM을 트위터에 올려둔 적이 있어요. 지금은 시간이 오래 지났지만... 혹시나 발견하게 되신다면 굳이 제 허락은 맡지 않으셔도 되고 편하게 사용해주세요. 찾으시는 분들이 여전히 있겠다 싶으면 이 쪽도 정리를 해둘 생각이에요!</p>
+          <p>
+            라이터분들의 허가 하에 (고맙습니다!!) BGM을 트위터에 올려둔 적이
+            있어요. 지금은 시간이 오래 지났지만... 혹시나 발견하게 되신다면 굳이
+            제 허락은 맡지 않으셔도 되고 편하게 사용해주세요. 찾으시는 분들이
+            여전히 있겠다 싶으면 이 쪽도 정리를 해둘 생각이에요!
+          </p>
 
-          <p>저는 함께하는데 있어서 꼭 룰이 익숙해야만 재밌다고 생각하지는 않는 편입니다. 공개 입문탁을 여러 번 진행한 적이 있을 정도로 초행 분들을 좋아합니다. CoC 입문을 원하시면 편하게 제게 연락 주세요!</p>
+          <p>
+            저는 함께하는데 있어서 꼭 룰이 익숙해야만 재밌다고 생각하지는 않는
+            편입니다. 공개 입문탁을 여러 번 진행한 적이 있을 정도로 초행 분들을
+            좋아합니다. CoC 입문을 원하시면 편하게 제게 연락 주세요!
+          </p>
 
-          <p>세팅 여부는 제가 세계관을 숙지하고 있는지, 제 기준에서 단기간에 다녀올 수 있을 만큼 제대로 준비되어 있는지(마음의 준비 포함. . .) ...그런것들을 기준하여 기재했습니다!</p>
+          <p>
+            세팅 여부는 제가 세계관을 숙지하고 있는지, 제 기준에서 단기간에
+            다녀올 수 있을 만큼 제대로 준비되어 있는지(마음의 준비 포함. . .)
+            ...그런것들을 기준하여 기재했습니다!
+          </p>
         </div>
-      </details>
+      </details> -->
 
       <p class="trpg_rule">
         <span>CoC</span>
@@ -113,11 +138,8 @@
         <span>스트라토샤우트</span>
         <span>피아스코</span>
         <span>더블크로스(Dx3)</span>
+        <span>마기카로기아</span>
       </p>
-
-      <input type="text" id="searchInput" class="search_input" placeholder="검색하셔도 됩니다" />
-
-      <span class="hr"></span>
 
       <div id="targetPn">
         <ul>
